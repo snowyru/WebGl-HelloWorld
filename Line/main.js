@@ -1,8 +1,8 @@
     const canvas = document.querySelector(`canvas`);
     const webgl = canvas.getContext(`webgl`);
     if(!webgl){ throw new Error("WebGL not available/supported");}
-    webgl.clearColor(1.0,1.0,0,1); 
-    webgl.clear(webgl.COLOR_BUFFER_BIT);
+    webgl.clearColor(1.0,1.0,0,1); //know why 2 methods are used
+    webgl.clear(webgl.COLOR_BUFFER_BIT); //these 2
     const vertices = new Float32Array([0,0,  -1,-1]);
     const buffer = webgl.createBuffer();
     webgl.bindBuffer(webgl.ARRAY_BUFFER, buffer);
