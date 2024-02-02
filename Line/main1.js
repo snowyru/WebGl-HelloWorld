@@ -32,6 +32,6 @@
     webgl.vertexAttribPointer(positionLocation, 2, webgl.FLOAT, false, 0, 0);
     //webgl.vertexAttribPointer(index, size, type, normalized, stride, offset);
     webgl.useProgram(program);
-    //webgl.drawArrays(webgl.LINE_LOOP, 0, 5);
+    //webgl.drawArrays(webgl.LINE_LOOP, 0, 5);  know how to manipulate to make shapes
     webgl.drawArrays(webgl.LINE_STRIP, 0, 5);
     //webgl.drawArrays(webgl.LINES, 0, 5);

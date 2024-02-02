@@ -33,6 +33,6 @@
     webgl.vertexAttribPointer(positionLocation, 2, webgl.FLOAT, false, 0, 0);
     //webgl.vertexAttribPointer(index, size, type, normalized, stride, offset);
     webgl.useProgram(program);
-    //webgl.drawArrays(webgl.TRIANGLES, 0, 3);    
-    //webgl.drawArrays(webgl.TRIANGLE_FAN, 0, 7);    
-    webgl.drawArrays(webgl.TRIANGLE_STRIP, 0, 7);
+    webgl.drawArrays(webgl.TRIANGLES, 0, 3);    //first 3 points define the first, second tri defined by the first point and the last point
+    //webgl.drawArrays(webgl.TRIANGLE_FAN, 0, 7);    //draw 3 fancy shapes
+    //webgl.drawArrays(webgl.TRIANGLE_STRIP, 0, 7);

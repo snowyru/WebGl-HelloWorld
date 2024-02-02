@@ -4,6 +4,7 @@
         void main() { gl_Position = vec4(0.1,0.1,0,1); //x,y,z,w  //x is actually x/w (becuase it transforms the object)
         gl_PointSize=50.0; // changes the size
     }`
+        //frag colour needs to be declared in webgl2
     const fsSource = `
     void main() { gl_FragColor = vec4(1.0,0,0,1.0); }`;
     const vertexShader = webgl.createShader(webgl.VERTEX_SHADER);
